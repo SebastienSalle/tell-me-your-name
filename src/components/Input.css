@@ -1,0 +1,64 @@
+.input-group {
+    position: relative;
+    margin: 20px;
+}
+
+.input {
+    border-radius: 50px;
+    border: none ;
+    background-color: transparent ;
+    color: #30336b;
+    padding: 10px;
+    font-size: inherit;
+    width: 200px;
+    max-width: 60vw;
+    caret-color : #be2edd;
+    outline: 2px solid #22a6b3;
+}
+
+.input:hover::placeholder,
+.input:focus::placeholder {
+    position: relative;
+    top: 0;
+    left:0;
+    transform: translate(-25px, -45px) scale(.7);
+    color: #be2edd;
+    padding-inline: 5px;
+    background-color: #dff9fb;
+    transition: transform .25s;
+}
+
+.input-label {
+    display:none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(30px, 10px);
+    transition: transform .15s;
+    pointer-events: none;
+}
+
+.input:hover+.input-label{
+    display: block;
+    transform: translate(0px, -14px) scale(.7);
+    color: #be2edd;
+    padding-inline: 5px;
+    background-color: #dff9fb;
+    transition: transform .15s;
+}
+
+.input:focus+.input-label,
+.input:valid+.input-label
+ {
+    display: block;
+    transform: translate(0px, -14px) scale(.7);
+    color: #be2edd;
+    padding-inline: 5px;
+    background-color: #dff9fb;
+    transition: transform .05s;
+
+}
+
+.input:is(:focus, :valid) {
+    outline-color: #7ed6df;
+}

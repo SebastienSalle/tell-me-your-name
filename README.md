@@ -1,3 +1,7 @@
+# Welcome!
+
+In this app you need to provide at least the first name.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

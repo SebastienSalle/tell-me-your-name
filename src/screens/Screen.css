@@ -1,0 +1,136 @@
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 35vh;
+    width: 90vw;
+    max-width: 700px;
+    background-color: #dff9fb;
+    color : #130f40;
+    border-radius: 15px 15px 2px 2px;
+}
+
+.card-header {
+    background-color: #30336b;
+    height: 10%;
+    min-height: 30px;
+    color: #dff9fb;
+    border-radius: 15px 15px 0 0;
+    padding-inline: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height: 70%;
+    padding-inline: 10px;
+}
+
+
+.card-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    height: 20%;
+    position: static;
+    bottom: 10px;
+}
+
+.warning {
+    color:#f9ca24;
+    font-size: smaller;
+    text-align: left;
+}
+
+.two-columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.side-question {
+    margin: 5px 0px 5px 0px ;
+    font-size: smaller;
+    text-align: left;
+}
+
+.name-comment {
+    width: 90%;
+    background-color: rgba(255, 190, 118,1.0);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px 0px 0px 0px ;
+    font-size: smaller;
+    text-align: left;
+}
+
+fieldset {
+    border: 2px solid #22a6b3;
+    border-radius: 15px;
+}
+
+.radio-item label {
+    color: #535c68;
+}
+
+.radio-item label:hover {
+    font-weight: bolder;
+    color: #6ab04c
+}
+
+.commentaries {
+    max-width: 45%;
+    font-size: smaller;
+    background-color: #badc58;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 5px;
+    margin-bottom: 20px;
+    color: #30336b;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+
+.back-arrow {
+    cursor: pointer;
+    color:#dff9fb;
+}
+
+.back-arrow:hover {
+    transform: scale(1.5) translate(-5px,0px);
+    transition: all ease-in-out 0.15s repeat;
+}
+
+.profile-data {
+    margin: 5px;
+    text-align: left;
+}
+
+.wrong-gender {
+    color:#535c68;
+    text-decoration: line-through #eb4d4b;
+}
+
+.unknown-data {
+    color:#535c68;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* colors : https://flatuicolors.com/palette/au */
+

@@ -1,0 +1,31 @@
+.button {
+    background-color: #f9ca24;
+    color: #30336b;
+    font-size: inherit;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    width: 150px;
+    max-width: 80vw;
+    cursor:pointer
+}
+
+.button:hover {
+    background-color: rgba(224, 86, 253,1.0);
+    color: #dff9fb;
+    transform: scaleX(1.1);
+    transition: all ease 0.15s;
+}
+
+.disabled {
+    background-color: rgba(249, 202, 36, 0.5);
+    color: #dff9fb;
+    cursor:not-allowed;
+}
+
+.disabled:hover {
+    background-color: rgba(249, 202, 36, 0.5);
+    color: #dff9fb;
+    transform: scale(0.9);
+    transition: all ease 0.15s;
+}
