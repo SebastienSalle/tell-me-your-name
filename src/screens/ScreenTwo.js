@@ -35,6 +35,8 @@ export default function ScreenTwo() {
   const [gender, setGender] = useState("");
   const [error, setError] = useState("");
 
+  const [nameComment, setNameComment] = useState('');
+
   switch (error) {
     case "Invalid 'name' parameter":
       warning = (
@@ -72,16 +74,15 @@ export default function ScreenTwo() {
         setError(response.error);
         setConfirmatedItem("undetermined");
       }
-      console.log(response.error);
       if (response) {
         setLoading(false);
       }
-      if (confirmatedItem === "") {
-        setConfirmatedItem("correct");
-      }
+
       setPortion(response.probability);
       setGender(response.gender);
     }
+
+    setNameComment(createNameComment())
 
     getGenderizeData(capitalize(firstName));
   }, [firstName]);
@@ -100,6 +101,10 @@ export default function ScreenTwo() {
         return "a male or a female";
     }
   };
+  
+  if (confirmatedItem === "") {
+    setConfirmatedItem("correct");
+  }
 
   const genderComment = (
     <p>
@@ -198,7 +203,6 @@ export default function ScreenTwo() {
             <Link
               to="/"
               className="back-arrow"
-              onClick={() => console.log("Go back")}
             >
               {headerContent}
             </Link>
@@ -218,7 +222,7 @@ export default function ScreenTwo() {
                     }}
                   >
                     {PieChart({ portion, gender: gender })}
-                    <div className="name-comment">{createNameComment()}</div>
+                    <div className="name-comment">{nameComment}</div>
                   </div>
                 ) : (
                   ""

@@ -89,7 +89,7 @@ export default function LastScreen() {
           </div>
         </div>
         <div className="card-footer">
-          <div className="commentaries" style={{ maxWidth: "60%" }}>
+          <div className="commentaries" style={{ maxWidth: "80%" }}>
             {funfacts}
           </div>
         </div>

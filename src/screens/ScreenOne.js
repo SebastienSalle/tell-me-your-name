@@ -13,8 +13,7 @@ import capitalize from "../helpers/capitalizingWord";
 export default function ScreenOne() {
   let headerContent = "Hello! What is your name?";
 
-  const { firstName } = useSelector((state) => state.user);
-  const { lastName } = useSelector((state) => state.user);
+  const { firstName, lastName } = useSelector((state) => state.user);
 
   const dispatch = useDispatch();
   const [firstNameDisplayed, setFirstName] = useState(firstName);

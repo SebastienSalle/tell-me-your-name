@@ -10,7 +10,6 @@ export default function PieChart(param) {
     
     const portion = Number(param.portion * 100)
     const rest = Number(100 - portion)
-    console.log("REST ",portion)
 
     let otherGender = 'female'
     if(param.gender === 'female'){
