@@ -213,14 +213,7 @@ export default function ScreenTwo() {
               <div className="commentaries">
                 {portion > 0 ? genderComment : noGenderComment}
                 {portion > 0 ? (
-                  <div
-                    style={{
-                      width: "100%",
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                    }}
-                  >
+                  <div className="comment-zone">
                     {PieChart({ portion, gender: gender })}
                     <div className="name-comment">{nameComment}</div>
                   </div>
@@ -231,7 +224,7 @@ export default function ScreenTwo() {
               {portion > 0 ? sideQuestion : ""}
             </div>
             <div className="body-bottom">
-              <div style={{ marginBottom: "15px" }}>
+              <div className="question-zone">
                 Last question: <br /> How old are you?
               </div>
               <div className="input-group">

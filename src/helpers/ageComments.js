@@ -9,7 +9,7 @@ export default function ageComments(age, gender, genderConfirmation) {
   let funfacts = "Nothing much to say about your age";
 
   if (age === "") {
-    funfacts = `Are you so old that you forgot to type in your age?`;
+    funfacts = `Are you so old that you forgot to type your age in?`;
   } else if (Number(age) === 0) {
     funfacts = `You're so young!`;
   } else if (Number(age) <= 95) {

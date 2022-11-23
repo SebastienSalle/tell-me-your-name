@@ -7,7 +7,7 @@ import {
 
 test("Should work with nothing", () => {
   expect(ageComments("")).toStrictEqual(
-    <div>Are you so old that you forgot to type in your age?</div>
+    <div>Are you so old that you forgot to type your age in?</div>
   );
 });
 

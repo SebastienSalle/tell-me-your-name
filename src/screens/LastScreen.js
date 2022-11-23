@@ -10,8 +10,9 @@ import ageComments from "../helpers/ageComments";
 import capitalize from "../helpers/capitalizingWord";
 
 export default function LastScreen() {
-
-  const {age, gender, genderConfirmation, firstName, lastName } = useSelector((state) => state.user);
+  const { age, gender, genderConfirmation, firstName, lastName } = useSelector(
+    (state) => state.user
+  );
 
   const headerContent = <FontAwesomeIcon icon={faArrowLeft} />;
 
@@ -89,9 +90,7 @@ export default function LastScreen() {
           </div>
         </div>
         <div className="card-footer">
-          <div className="commentaries" style={{ maxWidth: "80%" }}>
-            {funfacts}
-          </div>
+          <div className="commentaries larger">{funfacts}</div>
         </div>
       </div>
     </div>
