@@ -28,12 +28,12 @@ export default function ageComments(age, gender, genderConfirmation) {
         <span>
           Did you know that
           <br /> the oldest man,{" "}
-          <a href={oldestMan.url} target="_blank">
+          <a href={oldestMan.url} target="_blank" rel="noopener noreferrer">
             {oldestMan.firstName} {oldestMan.lastName}
           </a>{" "}
           , lived {oldestMan.age} years,
           <br /> while the oldest woman,{" "}
-          <a href={oldestWoman.url} target="_blank">
+          <a href={oldestWoman.url} target="_blank" rel="noopener noreferrer">
             {oldestWoman.firstName} {oldestWoman.lastName}
           </a>
           , lived {oldestWoman.age} years
@@ -43,7 +43,7 @@ export default function ageComments(age, gender, genderConfirmation) {
       funfacts = (
         <span>
           You are not older than{" "}
-          <a href={oldestMan.url} target="_blank">
+          <a href={oldestMan.url} target="_blank" rel="noopener noreferrer">
             {oldestMan.firstName} {oldestMan.lastName}
           </a>
         </span>
@@ -52,7 +52,7 @@ export default function ageComments(age, gender, genderConfirmation) {
       funfacts = (
         <span>
           You are not older than{" "}
-          <a href={oldestWoman.url} target="_blank">
+          <a href={oldestWoman.url} target="_blank" rel="noopener noreferrer">
             {oldestWoman.firstName} {oldestWoman.lastName}
           </a>
         </span>
